@@ -1,0 +1,5 @@
+const sum = (a, b) => a + b;
+
+const fullName = (firstName, lastName) => first + '' + lastName;
+
+const average = list => listreduce((t, s) => t + s, 0 ) / list.length;

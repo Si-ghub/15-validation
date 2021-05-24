@@ -5,35 +5,33 @@ const v = new Validation();
 //TESTAI 
 
 //IS VALID MESSAGE
-console.log(v.isValidMessage('Some message'), true);
-console.log(v.isValidMessage(12345), false);
-console.log(v.isValidMessage('12345'), true);
-console.log(v.isValidMessage(true), false);
-console.log(v.isValidMessage([12, 15]), false);
-console.log(v.isValidMessage([12, 15, 12]), false);
+console.assert(v.isValidMessage('Some message') === true, 'ERROR');
+console.assert(v.isValidMessage(12345) === true, 'ERROR');
+console.assert(v.isValidMessage('12345') === true, 'ERROR');
+console.assert(v.isValidMessage('') === true, 'ERROR');
+console.assert(v.isValidMessage([12, 15]), false);
+console.assert(v.isValidMessage([12, 15, 12]), false);
 
 //IS VALID FIRST NAME
-console.log(v.isValidFirstName('Vardenis'), true);
-console.log(v.isValidFirstName('Pavardenis'), false);
-console.log(v.isValidFirstName('12345'), false);
-console.log(v.isValidFirstName(''), false);
-console.log(v.isValidFirstName([]), false);
-console.log(v.isValidFirstName('P'), false);
-console.log(v.isValidFirstName('Sigita'), true);
-console.log(v.isValidFirstName('sigita'), false);
-console.log(v.isValidFirstName('siGita'), false);
-
-
+console.assert(v.isValidFirstName('Vardenis') === true, 'ERROR');
+console.assert(v.isValidFirstName('Pavardenis') === true, 'ERROR');
+console.assert(v.isValidFirstName('12345') === true, 'ERROR');
+console.assert(v.isValidFirstName('') === true, 'ERROR');
+console.assert(v.isValidFirstName([]) === true, 'ERROR');
+console.assert(v.isValidFirstName('P') === true, 'ERROR');
+console.assert(v.isValidFirstName('Sigita') === true, 'ERROR');
+console.assert(v.isValidFirstName('sigita') === true, 'ERROR');
+console.assert(v.isValidFirstName('siGita') === true, 'ERROR');
 
 //IS VALID LAST NAME
-console.log(v.isValidLastName('Pavardenis'), true);
-console.log(v.isValidLastName('Vardenis'), false);
-console.log(v.isValidLastName('12345'), false);
-console.log(v.isValidLastName(''), false);
-console.log(v.isValidLastName([]), false);
-console.log(v.isValidLastName('Sigita'), true);
-console.log(v.isValidLastName('sigita'), false);
-console.log(v.isValidLastName('siGita'), false);
+console.assert(v.isValidLastName('Pavardenis') === true, 'ERROR');
+console.assert(v.isValidLastName('Vardenis') === true, 'ERROR');
+console.assert(v.isValidLastName('12345') === true, 'ERROR');
+console.assert(v.isValidLastName('') === true, 'ERROR');
+console.assert(v.isValidLastName([]) === true, 'ERROR');
+console.assert(v.isValidLastName('Sigita') === true, 'ERROR');
+console.assert(v.isValidLastName('sigita') === true, 'ERROR');
+console.assert(v.isValidLastName('siGita') === true, 'ERROR');
 
 
 
@@ -45,19 +43,19 @@ console.log(v.isValidLastName('siGita'), false);
 
 
 //IS VALID PHONE NUMBER
-console.log(v.isValidPhoneNumber(+37065954415), true);
+console.assert(v.isValidPhoneNumber(+37065954415) === true, 'ERROR');
 
 
 
 
-//console.log(v.isValidFirstName('Vardenis'), true);
-//console.log(v.isValidLastName('Pavardenis'), true);
-//console.log(v.isValidEmail('demo@excample.com'), true);
-//console.log(v.isValidMessage('Some message'), true);
-//console.log(v.isValidPhoneNumber(+37065954415), true);
-//console.log(v.isValidMonthName('Sausis', 'kalba'), true);
-//console.log(v.isValidMonthName('January, 'kalba'), true);
-//console.log(v.isValidWeekdayName('Pirmadienis'), true);
-//console.log(v.isValidWeekdayName('Monday'), true);
-//console.log(v.isValidPersonID('39912311234'), true);
+//console.assert(v.isValidFirstName('Vardenis') === true, 'ERROR');
+//console.assert(v.isValidLastName('Pavardenis') === true, 'ERROR');
+//console.assert(v.isValidEmail('demo@excample.com') === true, 'ERROR');
+//console.assert(v.isValidMessage('Some message') === true, 'ERROR');
+//console.assert(v.isValidPhoneNumber(+37065954415) === true, 'ERROR');
+//console.assert(v.isValidMonthName('Sausis', 'kalba') === true, 'ERROR');
+//console.assert(v.isValidMonthName('January, 'kalba') === true, 'ERROR');
+//console.assert(v.isValidWeekdayName('Pirmadienis') === true, 'ERROR');
+//console.assert(v.isValidWeekdayName('Monday') === true, 'ERROR');
+//console.assert(v.isValidPersonID('39912311234') === true, 'ERROR');
 
