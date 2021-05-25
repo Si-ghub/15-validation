@@ -1,9 +1,9 @@
-class Validation {
+/*class Validation {
     isValidFirstName(firstName) {
         // blogai jeigu ne stringas
         // blogai jeigu simboliu yra maziau nei du
         // blogai jei pirmoji vardo raide===mazoji
-        // blogai jeigu 
+        // blogai jeigu
         if (!this.isValidMessage(firstName)) {
             return false;
         }
@@ -65,3 +65,4 @@ class Validation {
 }
 
 module.exports = Validation;
+*/
